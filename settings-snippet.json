@@ -1,0 +1,22 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup|resume|clear",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "printf '%s' '{\"hookSpecificOutput\":{\"hookEventName\":\"SessionStart\",\"additionalContext\":\"Session start: invoke the sprint skill (/sprint) before anything else and follow it. It checks docs/BRIEF.md and the standard project documents, asks the owner once if the project has none whether to work with a brief and sprints, records the answer, and in sprint mode checks progress and works the next open sprint.\"}}'"
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          { "type": "command", "command": "~/.claude/skills/plain-reply/remind.sh" }
+        ]
+      }
+    ]
+  }
+}
