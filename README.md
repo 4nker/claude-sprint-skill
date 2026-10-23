@@ -1,6 +1,8 @@
 # Claude sprint skill
 
-A one-command set-up that gives Claude Code two habits on a new computer, in every project.
+A one-command set-up that makes Claude Code work to a brief and a sprint plan on a new computer, in every project you choose.
+
+Written by Danny Austin.
 
 ## What you get
 
@@ -32,3 +34,7 @@ See `JOURNEYS.md` for what happens in each kind of project.
 - `SKILL.md`, `templates/`: the sprint skill and its document templates
 - `plain-reply/`: Danny's reply-style skill, installed alongside
 - `settings-snippet.json`, `CLAUDE-snippet.md`: what gets merged into `~/.claude`
+
+## Licence
+
+MIT. You can use, copy, change and share this, including in paid work, as long as you keep the copyright line "Copyright (c) 2026 Danny Austin" and the licence text with it. See `LICENSE`.
