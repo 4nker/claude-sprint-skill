@@ -2,7 +2,6 @@
 
 A one-command set-up that makes Claude Code work to a brief and a sprint plan on a new computer, in every project you choose.
 
-Written by Danny Austin.
 
 ## What you get
 
@@ -24,7 +23,7 @@ It puts files in `~/.claude`, merges its hooks into `~/.claude/settings.json` (e
 | `docs/UPDATES.md` | Dated log of discoveries made along the way. |
 | `docs/DECISIONS.md` | Every decision the owner makes, and why. |
 
-In sprint mode Claude insists on an approved brief, drafts the plan for approval, works one sprint at a time and stops for your review. In light mode it does the job and still logs discoveries and decisions.
+In sprint mode Claude insists on an approved brief, drafts the plan for approval. It works one sprint and one task at a time and stops for your review at the end of a sprint. 
 
 See `JOURNEYS.md` for what happens in each kind of project.
 
