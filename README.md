@@ -1,18 +1,17 @@
-# Claude working style
+# Claude sprint skill
 
 A one-command set-up that gives Claude Code two habits on a new computer, in every project.
 
 ## What you get
 
-- **Plain reply.** Claude answers in short, plain sentences. It is always on and never needs calling.
-- **Sprint.** Claude looks for a brief and a sprint plan when a session starts. If the project has none, it asks once whether you want to work with a brief and sprints or treat it as a quick job. It makes the standard documents either way and writes your answer into the brief, so it never asks again.
+When a Claude Code session starts in a project, Claude looks for a brief and a sprint plan. If the project has none, it asks once whether you want to work with a brief and sprints or treat it as a quick job. It makes the standard documents either way and writes your answer into the brief, so it never asks again.
 
 ## Install
 
-    git clone <this repo> claude-working-style
-    bash claude-working-style/install.sh
+    git clone https://github.com/4nker/claude-sprint-skill
+    bash claude-sprint-skill/install.sh
 
-It puts files in `~/.claude`, merges two hooks into `~/.claude/settings.json` (existing settings are kept) and adds the working rules to `~/.claude/CLAUDE.md`. Run it again at any time to update. It needs bash and python3.
+It puts files in `~/.claude`, merges its hooks into `~/.claude/settings.json` (existing settings are kept) and adds the working rules to `~/.claude/CLAUDE.md`. Run it again at any time to update. It needs bash and python3.
 
 ## What it creates in a project
 
@@ -31,5 +30,5 @@ See `JOURNEYS.md` for what happens in each kind of project.
 
 - `install.sh`: the installer
 - `SKILL.md`, `templates/`: the sprint skill and its document templates
-- `plain-reply/`: the plain reply skill and its hook
+- `plain-reply/`: Danny's reply-style skill, installed alongside
 - `settings-snippet.json`, `CLAUDE-snippet.md`: what gets merged into `~/.claude`
